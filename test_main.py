@@ -28,7 +28,7 @@ def test_send_email(caplog):
 def test_send_email_invalid(caplog):
     email_data = {
         'to': 'invalid_email',
-        'subject': 'Test email',
+        'subject': 'Test email',                                                                                                            
         'message': 'Error'
     }
     with caplog.at_level(logging.INFO):
